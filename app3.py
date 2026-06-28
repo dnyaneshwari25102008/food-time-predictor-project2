@@ -4,11 +4,10 @@ import pandas as pd
 import pickle
 
 
-pipe = pickle.load(open("pipe.pkl", "rb+"))
+pipe = pickle.load(open("pipe.pkl","rb"))
 df = pd.read_csv("final_data.csv")
 #st.title("Food delivery time Prediction App")
 st.image("food.jpg")
-backgroundColor ="#E8F0FE"
 st.set_page_config(
     page_title="Food Delivery Time Predictor",
     page_icon="🍔",
