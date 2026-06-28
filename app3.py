@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 
-pipe = pickle.load(open("pipe.pkl", "rb"))
+pipe = pickle.load(open("pipe.pkl", "rb+"))
 df = pd.read_csv("final_data.csv")
 #st.title("Food delivery time Prediction App")
 st.image("food.jpg")
